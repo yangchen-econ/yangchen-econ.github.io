@@ -18,7 +18,7 @@ author:
   name: "Yang CHEN"
   pronouns: #example: "she/her"  
   bio: "PhD student in Economics at HEC Lausanne, University of Lausanne."
-  location: "Lausanne, Switzerland"
+  location: #"Lausanne, Switzerland"
   employer: "HEC Lausanne, University of Lausanne"
   email: "yang.chen@unil.ch"
   orcid: "https://orcid.org/0009-0007-1342-7555"
