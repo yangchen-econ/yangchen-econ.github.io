@@ -14,4 +14,4 @@ Hello! I am a PhD student in Economics since 2022 at the [Department of Economic
 
 My research interests focus on matching theory, fair allocation, market design.
 
-I am currently visiting CREST-Ecole Polytechnique, hosted by Prof. [Julien COMBE](https://sites.google.com/site/combeju/home) and Prof. [Yuki TAMURA](https://sites.google.com/view/yukitamura).
+I am currently visiting [CREST](https://crest.science/)-Institut Polytechnique de Paris, hosted by Prof. [Julien COMBE](https://sites.google.com/site/combeju/home) and Prof. [Yuki TAMURA](https://sites.google.com/view/yukitamura).
