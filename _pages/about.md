@@ -12,6 +12,6 @@ About me
 -------------
 Hello! I am a PhD student in Economics since 2022 at the [Department of Economics](https://www.unil.ch/de/en/home.html), HEC Lausanne, University of Lausanne, under the supervision of Prof. [Bettina KLAUS](https://www.bklaus.net/).
 
-My research interests focus on microeconomics theory, matching theory, fair allocation, market design.
+My research interests focus on microeconomic theory, matching theory, fair allocation, market design.
 
 I have been visiting [CREST](https://crest.science/)-Institut Polytechnique de Paris from Nov 2025 to May 2026, hosted by Prof. [Julien COMBE](https://sites.google.com/site/combeju/home) and Prof. [Yuki TAMURA](https://sites.google.com/view/yukitamura).
