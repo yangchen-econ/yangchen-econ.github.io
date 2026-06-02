@@ -145,6 +145,7 @@ include:
   - .htaccess
   - _pages
   - files
+  - google07e510d963141bb1.html
 
 exclude:
   - "*.sublime-project"
