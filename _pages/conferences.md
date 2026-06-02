@@ -1,5 +1,5 @@
 ---
 layout: conferences
-title: Conferences/Activities
+# title: Conferences/Activities
 permalink: /conferences/
 ---
