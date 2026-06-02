@@ -17,8 +17,8 @@ main:
   - title: "Teaching"
     url: /teaching/
 
-  - title: "Advanced Courses"
-    url: /courses/
+  #- title: "Advanced Courses"
+   # url: /courses/
     
   - title: "CV"
     url: /cv/
