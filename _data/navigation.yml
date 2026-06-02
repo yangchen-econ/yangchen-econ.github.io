@@ -22,4 +22,6 @@ main:
     
   - title: "CV"
     url: "https://yangchen-econ.github.io/files/YangCHEN_CV.pdf"
+    target: "_blank"
+    rel: "noopener noreferrer"
     
