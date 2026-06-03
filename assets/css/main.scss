@@ -42,10 +42,6 @@
     "vendor/magnific-popup/magnific-popup"
 ;
 /* Custom styles for conferences page */
-.conference-meta {
-  font-size: 0.8em;
-}
-
 .conference-excerpt {
   font-size: 0.8em;
 }
@@ -60,7 +56,9 @@
 }
 
 .conference-meta {
+  font-size: 0.8em;
   margin-top: 0.2rem;
   margin-bottom: 0.1rem;
   line-height: 1.2;
+}
 }
