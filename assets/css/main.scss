@@ -115,3 +115,28 @@ body {
     font-size: 0.9rem;
   }
 }
+/* Increase spacing between conference/activity entries */
+.list__item {
+  margin-bottom: 2.5rem !important;
+}
+
+.archive__item {
+  margin-bottom: 0 !important;  /* Remove internal margin, use parent instead */
+}
+
+/* For even more spacing, target the article directly */
+.list__item article {
+  margin-bottom: 0;
+}
+
+/* Adjust the last item to not have extra space at the bottom */
+.list__item:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* Mobile spacing */
+@media screen and (max-width: 768px) {
+  .list__item {
+    margin-bottom: 2rem !important;
+  }
+}
