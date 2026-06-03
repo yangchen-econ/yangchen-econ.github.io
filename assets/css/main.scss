@@ -149,3 +149,15 @@ body {
     min-height: 0 !important;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .author__avatar,
+  .author__content {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .sidebar.sticky {
+    position: static !important;
+    top: auto !important;
+  }
+}
