@@ -62,3 +62,71 @@
   line-height: 1.2;
 }
 }
+
+/* Mobile responsiveness fixes */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img,
+iframe,
+embed,
+object {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Prevent long text from breaking layout */
+.page,
+.page__content,
+.archive,
+.sidebar,
+.conference-title,
+.conference-meta,
+.conference-excerpt {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+/* Mobile layout */
+@media screen and (max-width: 768px) {
+  .page,
+  .page__content,
+  .archive {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .sidebar {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+  }
+
+  .archive {
+    width: 100%;
+  }
+
+  .conference-title {
+    font-size: 1.4rem;
+    line-height: 1.25;
+  }
+
+  .conference-meta,
+  .conference-excerpt {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .greedy-nav a {
+    padding: 0.5rem 0.75rem;
+  }
+}
