@@ -163,3 +163,43 @@ body {
     margin-bottom: 0.25rem !important;
   }
 }
+/* Fix author profile spacing on mobile by disabling Follow toggle layout */
+@media screen and (max-width: 768px) {
+  .author__urls-wrapper .btn {
+    display: none !important;
+  }
+
+  .author__urls-wrapper {
+    display: block !important;
+    margin-top: 0.5rem !important;
+    margin-bottom: 0 !important;
+  }
+
+  .author__urls {
+    display: block !important;
+    position: static !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .author__urls li {
+    margin-bottom: 0.25rem !important;
+  }
+
+  .sidebar.sticky {
+    position: static !important;
+    top: auto !important;
+  }
+
+  .sidebar {
+    margin-bottom: 1rem !important;
+  }
+
+  .author__content {
+    margin-bottom: 0.75rem !important;
+  }
+
+  .author__avatar {
+    margin-bottom: 0.75rem !important;
+  }
+}
