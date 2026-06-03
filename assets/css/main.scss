@@ -128,3 +128,38 @@ body {
     margin-bottom: 0.5rem;
   }
 }
+/* Fix excessive author profile spacing on mobile */
+@media screen and (max-width: 768px) {
+  .sidebar.sticky {
+    position: static !important;
+    top: auto !important;
+    overflow: visible !important;
+  }
+
+  .sidebar {
+    margin-bottom: 1rem !important;
+    padding-bottom: 0 !important;
+  }
+
+  .author__avatar {
+    margin-bottom: 0.75rem !important;
+  }
+
+  .author__content {
+    margin-bottom: 0.75rem !important;
+  }
+
+  .author__urls-wrapper {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0 !important;
+  }
+
+  .author__urls {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .author__urls li {
+    margin-bottom: 0.25rem !important;
+  }
+}
