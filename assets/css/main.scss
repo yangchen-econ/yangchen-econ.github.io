@@ -203,3 +203,29 @@ body {
     margin-bottom: 0.75rem !important;
   }
 }
+@media screen and (max-width: 768px) {
+  .author__urls-wrapper {
+    margin-top: 0.5rem !important;
+    margin-bottom: 0 !important;
+  }
+
+  .author__urls {
+    display: block !important;
+    position: static !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .author__urls li {
+    margin-bottom: 0.25rem !important;
+  }
+
+  .sidebar.sticky {
+    position: static !important;
+    top: auto !important;
+  }
+
+  .sidebar {
+    margin-bottom: 1rem !important;
+  }
+}
