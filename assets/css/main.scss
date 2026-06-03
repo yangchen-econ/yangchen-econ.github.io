@@ -109,3 +109,43 @@ body {
     padding: 0.4rem 0.6rem;
   }
 }
+
+/* Fix huge blank space between author profile and page content on mobile */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    margin-bottom: 1rem !important;
+  }
+
+  .author__content,
+  .author__urls-wrapper,
+  .author__urls {
+    margin-bottom: 0 !important;
+  }
+
+  .page {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .page__inner-wrap {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+  }
+
+  .archive {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .page__content {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+  }
+
+  .layout--single .sidebar {
+    float: none !important;
+    width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
+  }
+}
