@@ -84,39 +84,19 @@ body {
 }
 
 /* Prevent long text from breaking layout */
-.page,
-.page__content,
-.archive,
-.sidebar,
 .conference-title,
 .conference-meta,
-.conference-excerpt {
+.conference-excerpt,
+.page__content {
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
 
 /* Mobile layout */
 @media screen and (max-width: 768px) {
-  .page,
-  .page__content,
-  .archive {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .sidebar {
-    width: 100%;
-    float: none;
-    margin-right: 0;
-  }
-
-  .archive {
-    width: 100%;
-  }
-
   .conference-title {
-    font-size: 1.4rem;
-    line-height: 1.25;
+    font-size: 1.2rem;
+    line-height: 1.3;
   }
 
   .conference-meta,
@@ -126,6 +106,6 @@ body {
   }
 
   .greedy-nav a {
-    padding: 0.5rem 0.75rem;
+    padding: 0.4rem 0.6rem;
   }
 }
