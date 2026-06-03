@@ -5,46 +5,48 @@
  * This file controls what is imported from /_sass
  *
  * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
+ * sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
  */
 
 @import
-    "vendor/breakpoint/breakpoint",
+  "vendor/breakpoint/breakpoint",
 
-    "themes",
-    "theme/default",
-    "theme/dark",
+  "themes",
+  "theme/default",
+  "theme/dark",
 
-    "include/mixins",
-    "vendor/susy/susy",
+  "include/mixins",
+  "vendor/susy/susy",
 
-    "layout/reset",
-    "layout/base",
+  "layout/reset",
+  "layout/base",
 
-    "include/utilities",
-    "layout/tables",
-    "layout/buttons",
-    "layout/notices",
-    "layout/masthead",
-    "layout/navigation",
-    "layout/footer",
-    "syntax",
+  "include/utilities",
+  "layout/tables",
+  "layout/buttons",
+  "layout/notices",
+  "layout/masthead",
+  "layout/navigation",
+  "layout/footer",
+  "syntax",
 
-    "layout/forms",
+  "layout/forms",
 
-    "layout/page",
-    "layout/archive",
-    "layout/sidebar",
+  "layout/page",
+  "layout/archive",
+  "layout/sidebar",
 
-    "vendor/font-awesome/fontawesome",
-    "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands",
-    "vendor/magnific-popup/magnific-popup"
+  "vendor/font-awesome/fontawesome",
+  "vendor/font-awesome/solid",
+  "vendor/font-awesome/brands",
+  "vendor/magnific-popup/magnific-popup"
 ;
+
 /* Custom styles for conferences page */
 .conference-excerpt {
   font-size: 0.8em;
 }
+
 .conference-item {
   margin-bottom: 0.3rem;
 }
@@ -62,7 +64,7 @@
   line-height: 1.2;
 }
 
-/* Mobile responsiveness fixes */
+/* General responsiveness helpers */
 html {
   box-sizing: border-box;
 }
@@ -92,7 +94,7 @@ body {
   word-wrap: break-word;
 }
 
-/* Mobile layout */
+/* Mobile typography tweaks */
 @media screen and (max-width: 768px) {
   .conference-title {
     font-size: 1.2rem;
@@ -110,54 +112,19 @@ body {
   }
 }
 
-/* Fix huge blank space between author profile and page content on mobile */
+/* Safe mobile sidebar adjustment */
 @media screen and (max-width: 768px) {
-  .sidebar {
-    margin-bottom: 1rem !important;
-  }
-
-  .author__content,
-  .author__urls-wrapper,
-  .author__urls {
-    margin-bottom: 0 !important;
-  }
-
-  .page {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-  }
-
-  .page__inner-wrap {
-    padding-top: 0 !important;
-    margin-top: 0 !important;
-  }
-
-  .archive {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-  }
-
-  .page__content {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-  }
-
-  .layout--single .sidebar {
-    float: none !important;
-    width: 100% !important;
-    height: auto !important;
-    min-height: 0 !important;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .author__avatar,
-  .author__content {
-    margin-bottom: 0.5rem !important;
-  }
-
   .sidebar.sticky {
     position: static !important;
     top: auto !important;
+  }
+
+  .sidebar {
+    margin-bottom: 1rem;
+  }
+
+  .author__avatar,
+  .author__content {
+    margin-bottom: 0.5rem;
   }
 }
