@@ -42,6 +42,17 @@
   "vendor/magnific-popup/magnific-popup"
 ;
 
+/* Profile photo shape */
+.author__avatar img,
+img.author__avatar {
+  aspect-ratio: 1 / 1;
+  border: 0 !important;
+  border-radius: 0 !important;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  object-fit: cover;
+  padding: 0 !important;
+}
+
 /* Custom styles for conferences page */
 .conference-excerpt {
   font-size: 0.8em;
