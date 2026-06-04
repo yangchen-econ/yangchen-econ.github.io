@@ -69,6 +69,33 @@
   line-height: 1.2;
 }
 
+/* Match Research and Teaching entry spacing to Conferences/Activities */
+.research-list .research-item,
+.course-list .course-item {
+  margin-bottom: 1.5rem !important;
+}
+
+@media screen and (min-width: 769px) {
+  .research-list .research-item,
+  .course-list .course-item {
+    margin-bottom: 1.25rem !important;
+  }
+}
+
+.research-list .research-title,
+.course-list .course-title {
+  margin: 0 0 0.1rem !important;
+  line-height: 1.2;
+}
+
+.research-authors,
+.research-note,
+.course-years {
+  margin-top: 0.2rem;
+  margin-bottom: 0.1rem;
+  line-height: 1.2;
+}
+
 /* General responsiveness helpers */
 html {
   box-sizing: border-box;
