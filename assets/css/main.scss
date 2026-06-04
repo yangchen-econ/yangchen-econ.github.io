@@ -45,11 +45,9 @@
 /* Profile photo shape */
 .author__avatar img,
 img.author__avatar {
-  aspect-ratio: 1 / 1;
   border: 0 !important;
   border-radius: 0 !important;
-  clip-path: polygon(50% 0, 100% 100%, 0 100%);
-  object-fit: cover;
+  clip-path: none;
   padding: 0 !important;
 }
 
