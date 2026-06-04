@@ -48,8 +48,15 @@
 }
 
 .conference-item {
-  margin-bottom: 3rem;
-  padding-bottom: 0.75rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 769px) {
+  .conference-item {
+    margin-bottom: 3rem;
+    padding-bottom: 0.75rem;
+  }
 }
 
 .conference-title {
