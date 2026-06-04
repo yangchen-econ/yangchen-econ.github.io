@@ -47,19 +47,18 @@
   font-size: 0.8em;
 }
 
-.conference-item {
-  margin-bottom: 1.5rem;
+.entries-list .conference-item {
+  margin-bottom: 1.5rem !important;
 }
 
 @media screen and (min-width: 769px) {
-  .conference-item {
-    margin-bottom: 2rem;
+  .entries-list .conference-item {
+    margin-bottom: 1.25rem !important;
   }
 }
 
-.conference-title {
-  margin-top: 0;
-  margin-bottom: 0.1rem;
+.entries-list .conference-title {
+  margin: 0 0 0.1rem !important;
   line-height: 1.2;
 }
 
