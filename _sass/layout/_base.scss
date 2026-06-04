@@ -7,17 +7,19 @@ html {
   min-height: 100%;
 }
 
-/* Ensure sidebar and main content stay fixed */
-.sidebar {
-  width: 240px;         /* Set a fixed width */
-  height: 100vh;        /* Full viewport height */
-  padding-right: 25px;  /* Add gap between sidebar and main content */
-}
+/* Desktop sidebar spacing */
+@media screen and (min-width: $sidebar-screen-min-width) {
+  .sidebar {
+    width: 240px;         /* Set a fixed width */
+    height: 100vh;        /* Full viewport height */
+    padding-right: 25px;  /* Add gap between sidebar and main content */
+  }
 
-.main {
-  margin-left: 260px;   /* Sidebar width + padding */
-  max-width: calc(100% - 260px); /* Prevent overflow */
-  padding: 20px;        /* Add internal padding */
+  .main {
+    margin-left: 260px;   /* Sidebar width + padding */
+    max-width: calc(100% - 260px); /* Prevent overflow */
+    padding: 20px;        /* Add internal padding */
+  }
 }
 
 body {
