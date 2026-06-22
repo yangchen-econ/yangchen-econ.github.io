@@ -40,10 +40,10 @@ layout: archive
   {% endfor %}
 </div>
 
-<h2>Travels</h2>
+<h2>Visits</h2>
 <div class="entries-list">
-  {% assign sorted_travels = site.conferences | where: "type", "travel" | sort: "date_start" | reverse %}
-  {% for post in sorted_travels %}
+  {% assign sorted_visits = site.conferences | where: "type", "visit" | sort: "date_start" | reverse %}
+  {% for post in sorted_visits %}
     <div class="conference-item">
       <h3 class="conference-title">
         {% if post.event_url %}
