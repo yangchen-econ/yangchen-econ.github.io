@@ -76,9 +76,9 @@ layout: archive
   {% endfor %}
 </div>
 
-<h2>Summer Schools</h2>
+<h2 id="summer-schools">Summer Schools</h2>
 <div class="entries-list">
-  {% assign sorted_summerschools = site.conferences | concat: site.courses | where: "type", "summerschool" | uniq: "title" | sort: "date_start" | reverse %}
+  {% assign sorted_summerschools = site.conferences | where: "type", "summerschool" | sort: "date_start" | reverse %}
   {% for post in sorted_summerschools %}
     <div class="conference-item">
       <h3 class="conference-title">

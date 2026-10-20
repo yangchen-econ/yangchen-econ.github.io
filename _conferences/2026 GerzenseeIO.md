@@ -11,4 +11,6 @@ location: "Gerzensee, Switzerland"           # Location
 event_url: https://www.szgerzensee.ch/programs/graduate-training/advanced-economics-courses/archive                # Official website
 # prof_url: https://sites.duke.edu/collardwexler/
 type: "summerschool"                   # Required for filtering
+redirect_from:
+  - /courses/2026 GerzenseeIO/
 ---

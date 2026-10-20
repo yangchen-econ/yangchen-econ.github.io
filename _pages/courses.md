@@ -1,5 +1,5 @@
 ---
-layout: courses
-title: "Advanced Courses"
 permalink: /courses/
+redirect_to: /conferences/#summer-schools
+sitemap: false
 ---

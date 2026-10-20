@@ -11,4 +11,6 @@ location: "Gerzensee, Switzerland"           # Location
 event_url: https://szgerzensee.ch/login/23adp1-course-name-1-by-professor-name-1-1-1                # Official website
 prof_url: https://mitsloan.mit.edu/faculty/directory/alessandro-bonatti
 type: "summerschool"                   # Required for filtering
+redirect_from:
+  - /courses/2024 DigitalMarket/
 ---

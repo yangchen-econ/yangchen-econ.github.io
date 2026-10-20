@@ -4,9 +4,6 @@
 # links. Removing a link prevents it from showing in the header, but does not
 # prevent it from being included in the site.
 #
-# NOTE that only one of the CV options should be selected, the first is for the
-#      Markdown formatted page while the second is generated using JSON.
-
 main:
   - title: "Research"
     url: /research/
@@ -17,9 +14,6 @@ main:
   - title: "Teaching"
     url: /teaching/
 
-  #- title: "Advanced Courses"
-   # url: /courses/
-    
   - title: "CV"
     url: "https://yangchen-econ.github.io/files/YangCHEN_CV.pdf"
     target: "_blank"
