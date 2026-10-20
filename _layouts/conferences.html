@@ -118,9 +118,7 @@ layout: archive
 <section id="doctoral-program" class="entries-list" aria-label="Doctoral program">
   {% for post in doctoral_programs %}
     <div class="conference-item">
-      <h3 class="conference-title">
-        <a href="{{ post.event_url }}" target="_blank" rel="noopener noreferrer">{{ post.title }}</a>
-      </h3>
+      <h2>{{ post.title }}</h2>
       <div class="conference-meta">
         {{ post.years }} | {{ post.venue }} | {{ post.location }}
       </div>
