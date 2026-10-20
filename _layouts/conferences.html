@@ -4,6 +4,8 @@ layout: archive
 
 {{ content }}
 
+{% assign doctoral_programs = site.conferences | where: "type", "doctoral_program" | sort: "years" | reverse %}
+
 <h2>Conferences</h2>
 <div class="entries-list">
   {% assign sorted_conferences = site.conferences | where: "type", "conference" | sort: "date_start" | reverse %}
@@ -111,3 +113,23 @@ layout: archive
     </div>
   {% endfor %}
 </div>
+
+{% if doctoral_programs.size > 0 %}
+<section id="doctoral-program" class="entries-list" aria-label="Doctoral program">
+  {% for post in doctoral_programs %}
+    <div class="conference-item">
+      <h3 class="conference-title">
+        <a href="{{ post.event_url }}" target="_blank" rel="noopener noreferrer">{{ post.title }}</a>
+      </h3>
+      <div class="conference-meta">
+        {{ post.years }} | {{ post.venue }} | {{ post.location }}
+      </div>
+      <div class="conference-excerpt">
+        {% for sequence in post.sequences %}
+          <p>{{ sequence.name }} sequence with {% for instructor in sequence.instructors %}{% unless forloop.first %}{% if forloop.last %} and {% else %}, {% endif %}{% endunless %}<a href="{{ instructor.url }}" target="_blank" rel="noopener noreferrer">Prof. {{ instructor.name }}</a> ({{ instructor.affiliation }}){% endfor %}.</p>
+        {% endfor %}
+      </div>
+    </div>
+  {% endfor %}
+</section>
+{% endif %}
