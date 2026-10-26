@@ -54,6 +54,19 @@ img.author__avatar {
   padding: 0 !important;
 }
 
+/* Give main page content a consistent tab-like inset. */
+.page__content,
+.archive__content {
+  padding-inline-start: 1.5rem;
+}
+
+@media screen and (max-width: 768px) {
+  .page__content,
+  .archive__content {
+    padding-inline-start: 1rem;
+  }
+}
+
 /* Custom styles for conferences page */
 .conference-excerpt {
   font-size: 0.8em;
