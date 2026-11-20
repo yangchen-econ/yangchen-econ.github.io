@@ -1,0 +1,11 @@
+{% if include.people.size > 0 %}
+  <p class="conference-meta">
+    Instructor{% if include.people.size > 1 %}s{% endif %}:
+    {% for person in include.people %}
+      <a href="{{ person.url | escape }}" target="_blank" rel="noopener noreferrer">Prof. {{ person.name | escape }}</a> ({{ person.affiliation | escape }})
+      {%- if forloop.rindex == 2 %} and
+      {%- elsif forloop.rindex > 2 %},
+      {%- endif %}
+    {% endfor %}
+  </p>
+{% endif %}

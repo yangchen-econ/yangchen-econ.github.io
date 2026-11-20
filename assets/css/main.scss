@@ -224,6 +224,9 @@ a:hover { text-decoration: underline; text-underline-offset: .18em; }
 }
 .conference-excerpt p + p { margin-top: .3rem; }
 
+.doctoral-sequences { margin-top: 1rem; }
+.doctoral-sequences .conference-title { color: var(--link); }
+
 .course-item {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(13rem, 1fr);

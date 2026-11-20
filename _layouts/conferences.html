@@ -106,6 +106,8 @@ layout: archive
         {% endif %}
       </div>
 
+      {% include course-instructors.html people=post.profs %}
+
       {% assign excerpt_text = post.excerpt | strip_html | strip %}
       {% if excerpt_text != "" %}
         <div class="conference-excerpt">{{ post.excerpt }}</div>
@@ -122,9 +124,12 @@ layout: archive
       <div class="conference-meta">
         {{ post.years }} | {{ post.venue }} | {{ post.location }}
       </div>
-      <div class="conference-excerpt">
+      <div class="entries-list doctoral-sequences">
         {% for sequence in post.sequences %}
-          <p>{{ sequence.name }} sequence with {% for instructor in sequence.instructors %}{% unless forloop.first %}{% if forloop.last %} and {% else %}, {% endif %}{% endunless %}<a href="{{ instructor.url }}" target="_blank" rel="noopener noreferrer">Prof. {{ instructor.name }}</a> ({{ instructor.affiliation }}){% endfor %}.</p>
+          <div>
+            <h3 class="conference-title">{{ sequence.name }}</h3>
+            {% include course-instructors.html people=sequence.instructors %}
+          </div>
         {% endfor %}
       </div>
     </div>
