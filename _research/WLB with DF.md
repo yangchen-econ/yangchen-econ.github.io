@@ -1,5 +1,6 @@
 ---
 title: "Welfare Lower Bounds in House Allocation Problems with Existing Tenants: Three Characterizations"
+date: 2026-11-03
 paper_url: https://dx.doi.org/10.2139/ssrn.5111246
 coauthors:
   - name: "Di FENG"

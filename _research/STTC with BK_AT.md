@@ -1,5 +1,6 @@
 ---
 title: "Serial Top Trading Cycles and the Exclusion Core in Mixed-Ownership Object Allocation Problems"
+date: 2026-11-03
 paper_url: https://doi.org/10.48550/arXiv.2610.04015
 coauthors:
   - name: "Bettina Klaus"
