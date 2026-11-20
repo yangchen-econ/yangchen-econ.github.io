@@ -33,6 +33,10 @@ html[data-theme="dark"] {
 *, *::before, *::after { box-sizing: border-box; }
 
 body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   background: var(--paper);
   color: var(--text);
@@ -183,22 +187,6 @@ a:hover { text-decoration: underline; text-underline-offset: .18em; }
   text-indent: 0;
 }
 
-.interior-layout .sidebar {
-  margin-top: 3rem;
-  border-top: 1px solid var(--line);
-  padding-top: 1.5rem;
-}
-
-.interior-layout .author-profile {
-  display: grid;
-  grid-template-columns: 4rem minmax(0, 34ch) minmax(0, 1fr);
-  align-items: center;
-  gap: .75rem 1.25rem;
-}
-
-.interior-layout .author__name { font-size: 1.12rem; }
-.interior-layout .author__urls { font-size: .875rem; }
-
 .archive__content h2, .page__content h2, .page__share-title {
   margin-block: 2.5rem 1rem;
   padding-bottom: .5rem;
@@ -211,7 +199,9 @@ a:hover { text-decoration: underline; text-underline-offset: .18em; }
 }
 
 .archive__content > h2:first-child { margin-top: 0; }
-.research-list, .entries-list { display: grid; gap: 1.35rem; }
+.research-list, .entries-list { display: grid; }
+.research-list { gap: 1.35rem; }
+.entries-list { gap: 1.1rem; }
 
 .research-title, .conference-title {
   line-height: 1.35;
@@ -224,11 +214,15 @@ a:hover { text-decoration: underline; text-underline-offset: .18em; }
   font-size: .95rem;
 }
 
-.research-authors, .research-note, .conference-meta, .conference-excerpt {
+.research-authors, .research-note {
   margin-top: .3rem;
 }
 
-.conference-excerpt p + p { margin-top: .4rem; }
+.conference-meta, .conference-excerpt {
+  margin-top: .2rem;
+  line-height: 1.5;
+}
+.conference-excerpt p + p { margin-top: .3rem; }
 
 .course-item {
   display: grid;
@@ -248,11 +242,20 @@ a:hover { text-decoration: underline; text-underline-offset: .18em; }
 .pagination .disabled { color: var(--caption); pointer-events: none; }
 
 .page__footer {
+  margin-top: auto;
   border-top: 1px solid var(--line);
   color: var(--caption);
-  font-size: .85rem;
+  font-size: .78rem;
+  line-height: 1.4;
 }
-.page__footer footer { padding-block: 1.5rem; }
+.page__footer footer {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: .25rem 1rem;
+  padding-block: .7rem;
+}
+.page__footer-follow { grid-column: 1 / -1; }
 
 @media (max-width: 600px) {
   body { font-size: 16px; }
@@ -278,9 +281,6 @@ a:hover { text-decoration: underline; text-underline-offset: .18em; }
   .home-layout .author__content { margin: 0; }
   .home-layout .author__avatar { max-width: 150px; }
   .home-layout .author__urls-wrapper { grid-column: 1 / -1; }
-
-  .interior-layout .author-profile { grid-template-columns: 3.5rem minmax(0, 1fr); }
-  .interior-layout .author__urls-wrapper { grid-column: 1 / -1; }
 
   .course-item { grid-template-columns: 1fr; }
   .course-years { text-align: left; }

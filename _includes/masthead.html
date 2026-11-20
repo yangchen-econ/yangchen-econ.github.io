@@ -2,7 +2,7 @@
 
 <header class="site-header">
   <div class="site-wrap">
-    <a class="site-name" href="{{ base_path }}/"{% if page.url == '/' %} aria-current="page"{% endif %}>{{ site.title }}</a>
+    <a class="site-name" href="{{ base_path }}/">{{ site.title }}</a>
     <nav class="site-nav" aria-label="Main navigation">
       {% if site.email %}<a href="mailto:{{ site.email }}" title="Email">{{ site.email }}</a>{% endif %}
       {% for link in site.data.navigation.main %}
@@ -11,7 +11,7 @@
         {% else %}
           {% assign destination = link.url | prepend: base_path %}
         {% endif %}
-        <a href="{{ destination }}"{% if page.url == link.url %} aria-current="page"{% elsif page.url contains link.url %} aria-current="location"{% endif %}>{{ link.title }}</a>
+        <a href="{{ destination }}"{% if page.url == link.url %} aria-current="page"{% elsif link.url != '/' and page.url contains link.url %} aria-current="location"{% endif %}>{{ link.title }}</a>
       {% endfor %}
       <button type="button" id="theme-toggle" aria-label="Toggle color theme" title="Toggle color theme">
         <i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true"></i>
