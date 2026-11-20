@@ -46,48 +46,9 @@ $(document).ready(function () {
 
   $('#theme-toggle').on('click', toggleTheme);
 
-  // These should be the same as the settings in _variables.scss
-  const scssLarge = 925; // pixels
-
-  // Sticky footer
-  var bumpIt = function () {
-    $("body").css("margin-bottom", $(".page__footer").outerHeight(true));
-  },
-    didResize = false;
-
-  bumpIt();
-
-  $(window).resize(function () {
-    didResize = true;
-  });
-  setInterval(function () {
-    if (didResize) {
-      didResize = false;
-      bumpIt();
-    }
-  }, 250);
-
-  // FitVids init
   fitvids();
 
-  // Follow menu drop down
-  $(".author__urls-wrapper button").on("click", function () {
-    $(".author__urls").fadeToggle("fast", function () { });
-    $(".author__urls-wrapper button").toggleClass("open");
-  });
-
-  // Restore the follow menu if toggled on a window resize
-  jQuery(window).on('resize', function () {
-    if ($('.author__urls.social-icons').css('display') == 'none' && $(window).width() >= scssLarge) {
-      $(".author__urls").css('display', 'block')
-    }
-  });
-
-  // init smooth scroll, this needs to be slightly more than then fixed masthead height
-  $("a").smoothScroll({ 
-    offset: -75, // needs to match $masthead-height
-    preventDefault: false,
-  }); 
+  $("a").smoothScroll({ preventDefault: false });
 
   // add lightbox class to all image links
   // Add "image-popup" to links ending in image extensions,

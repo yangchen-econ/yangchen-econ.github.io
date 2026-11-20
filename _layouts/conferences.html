@@ -6,7 +6,7 @@ layout: archive
 
 {% assign doctoral_programs = site.conferences | where: "type", "doctoral_program" | sort: "years" | reverse %}
 
-<h2>Conferences</h2>
+<h1 class="page__title">Conferences</h1>
 <div class="entries-list">
   {% assign sorted_conferences = site.conferences | where: "type", "conference" | sort: "date_start" | reverse %}
   {% for post in sorted_conferences %}

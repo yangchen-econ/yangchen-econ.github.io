@@ -16,10 +16,21 @@ layout: compress
     {% include browser-upgrade.html %}
     {% include masthead.html %}
 
-    {{ content }}
+    {% if page.header.overlay_color or page.header.overlay_image or page.header.image %}
+      {% include page__hero.html %}
+    {% endif %}
+    {% if page.url != "/" and site.breadcrumbs %}
+      {% unless paginator %}{% include breadcrumbs.html %}{% endunless %}
+    {% endif %}
+
+    <main id="main" class="site-wrap {% if page.url == '/' %}home-layout{% else %}interior-layout{% endif %}">
+      {% if page.url == "/" %}{% include sidebar.html %}{% endif %}
+      {{ content }}
+      {% unless page.url == "/" %}{% include sidebar.html %}{% endunless %}
+    </main>
 
     <div class="page__footer">
-      <footer>
+      <footer class="site-wrap">
         {% include footer/custom.html %}
         {% include footer.html %}
       </footer>
